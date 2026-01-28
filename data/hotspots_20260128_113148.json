@@ -1,0 +1,41 @@
+{
+  "timestamp": "2026-01-28T11:31:48.860132",
+  "hotspots": [
+    {
+      "sector": "新能源",
+      "score": 50,
+      "match_count": 5,
+      "related_news": [
+        {
+          "title": "新能源政策利好，光伏板块大涨",
+          "url": "https://example.com/news/2",
+          "snippet": "国家出台新能源支持政策，光伏、风电等板块应声大涨。储能、锂电池等产业链全线飘红。"
+        }
+      ]
+    },
+    {
+      "sector": "人工智能",
+      "score": 30,
+      "match_count": 3,
+      "related_news": [
+        {
+          "title": "人工智能板块持续走强，多只个股涨停",
+          "url": "https://example.com/news/1",
+          "snippet": "受利好消息影响，人工智能板块今日表现强劲，多只个股涨停。大模型、算力等细分领域表现突出。"
+        }
+      ]
+    },
+    {
+      "sector": "半导体",
+      "score": 20,
+      "match_count": 2,
+      "related_news": [
+        {
+          "title": "半导体板块活跃，国产替代加速",
+          "url": "https://example.com/news/3",
+          "snippet": "半导体板块今日活跃，国产替代加速推进。芯片、设备等细分领域表现优异。"
+        }
+      ]
+    }
+  ]
+}

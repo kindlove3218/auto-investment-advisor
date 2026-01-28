@@ -1,0 +1,23 @@
+{
+  "timestamp": "2026-01-28T11:21:06.038952",
+  "cn": {
+    "timestamp": "2026-01-28T11:21:06.038964",
+    "market": "cn",
+    "hot_stocks": {},
+    "hot_sectors": [],
+    "stocks_to_analyze": []
+  },
+  "hk": {
+    "timestamp": "2026-01-28T11:21:17.110819",
+    "market": "hk",
+    "hot_stocks": {},
+    "stocks_to_analyze": []
+  },
+  "us": {
+    "timestamp": "2026-01-28T11:21:24.203012",
+    "market": "us",
+    "hot_stocks": [],
+    "sector_performance": [],
+    "stocks_to_analyze": []
+  }
+}

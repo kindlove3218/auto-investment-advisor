@@ -40,23 +40,29 @@ class DataFetcher:
                 'stocks_to_analyze': []
             }
             
-            hot_stocks = self.cn_fetcher.get_hot_stocks()
-            time.sleep(1)
-            
-            if hot_stocks:
-                data['hot_stocks']['top_gainers'] = hot_stocks.get('top_gainers', pd.DataFrame()).head(50).to_dict('records')
-                data['hot_stocks']['top_losers'] = hot_stocks.get('top_losers', pd.DataFrame()).head(50).to_dict('records')
-                data['hot_stocks']['top_volume'] = hot_stocks.get('top_volume', pd.DataFrame()).head(50).to_dict('records')
+            try:
+                hot_stocks = self.cn_fetcher.get_hot_stocks()
+                time.sleep(1)
                 
-                data['stocks_to_analyze'].extend(
-                    stock.to_dict() for stock in hot_stocks.get('top_gainers', pd.DataFrame()).head(20).itertuples()
-                )
+                if hot_stocks:
+                    data['hot_stocks']['top_gainers'] = hot_stocks.get('top_gainers', pd.DataFrame()).head(50).to_dict('records')
+                    data['hot_stocks']['top_losers'] = hot_stocks.get('top_losers', pd.DataFrame()).head(50).to_dict('records')
+                    data['hot_stocks']['top_volume'] = hot_stocks.get('top_volume', pd.DataFrame()).head(50).to_dict('records')
+                    
+                    data['stocks_to_analyze'].extend(
+                        stock.to_dict() for stock in hot_stocks.get('top_gainers', pd.DataFrame()).head(20).itertuples()
+                    )
+            except Exception as e:
+                logger.warning(f"获取热门股票失败: {e}")
             
-            hot_sectors = self.cn_fetcher.get_hot_sectors()
-            time.sleep(1)
-            
-            if not hot_sectors.empty:
-                data['hot_sectors'] = hot_sectors.head(20).to_dict('records')
+            try:
+                hot_sectors = self.cn_fetcher.get_hot_sectors()
+                time.sleep(1)
+                
+                if not hot_sectors.empty:
+                    data['hot_sectors'] = hot_sectors.head(20).to_dict('records')
+            except Exception as e:
+                logger.warning(f"获取热门板块失败: {e}")
             
             logger.info(f"获取到 {len(data['stocks_to_analyze'])} 只A股待分析")
             return data
@@ -74,17 +80,20 @@ class DataFetcher:
                 'stocks_to_analyze': []
             }
             
-            hot_stocks = self.hk_fetcher.get_hot_stocks()
-            time.sleep(1)
-            
-            if hot_stocks:
-                data['hot_stocks']['top_gainers'] = hot_stocks.get('top_gainers', pd.DataFrame()).head(50).to_dict('records')
-                data['hot_stocks']['top_losers'] = hot_stocks.get('top_losers', pd.DataFrame()).head(50).to_dict('records')
-                data['hot_stocks']['top_volume'] = hot_stocks.get('top_volume', pd.DataFrame()).head(50).to_dict('records')
+            try:
+                hot_stocks = self.hk_fetcher.get_hot_stocks()
+                time.sleep(1)
                 
-                data['stocks_to_analyze'].extend(
-                    stock.to_dict() for stock in hot_stocks.get('top_gainers', pd.DataFrame()).head(15).itertuples()
-                )
+                if hot_stocks:
+                    data['hot_stocks']['top_gainers'] = hot_stocks.get('top_gainers', pd.DataFrame()).head(50).to_dict('records')
+                    data['hot_stocks']['top_losers'] = hot_stocks.get('top_losers', pd.DataFrame()).head(50).to_dict('records')
+                    data['hot_stocks']['top_volume'] = hot_stocks.get('top_volume', pd.DataFrame()).head(50).to_dict('records')
+                    
+                    data['stocks_to_analyze'].extend(
+                        stock.to_dict() for stock in hot_stocks.get('top_gainers', pd.DataFrame()).head(15).itertuples()
+                    )
+            except Exception as e:
+                logger.warning(f"获取热门港股失败: {e}")
             
             logger.info(f"获取到 {len(data['stocks_to_analyze'])} 只港股待分析")
             return data
@@ -103,21 +112,27 @@ class DataFetcher:
                 'stocks_to_analyze': []
             }
             
-            hot_stocks = self.us_fetcher.get_hot_stocks()
-            time.sleep(1)
-            
-            if not hot_stocks.empty:
-                data['hot_stocks'] = hot_stocks.head(50).to_dict('records')
+            try:
+                hot_stocks = self.us_fetcher.get_hot_stocks()
+                time.sleep(1)
                 
-                data['stocks_to_analyze'].extend(
-                    stock.to_dict() for stock in hot_stocks.head(15).itertuples()
-                )
+                if not hot_stocks.empty:
+                    data['hot_stocks'] = hot_stocks.head(50).to_dict('records')
+                    
+                    data['stocks_to_analyze'].extend(
+                        stock.to_dict() for stock in hot_stocks.head(15).itertuples()
+                    )
+            except Exception as e:
+                logger.warning(f"获取热门美股失败: {e}")
             
-            sector_performance = self.us_fetcher.get_sector_performance()
-            time.sleep(1)
-            
-            if not sector_performance.empty:
-                data['sector_performance'] = sector_performance.to_dict('records')
+            try:
+                sector_performance = self.us_fetcher.get_sector_performance()
+                time.sleep(1)
+                
+                if not sector_performance.empty:
+                    data['sector_performance'] = sector_performance.to_dict('records')
+            except Exception as e:
+                logger.warning(f"获取板块表现失败: {e}")
             
             logger.info(f"获取到 {len(data['stocks_to_analyze'])} 只美股待分析")
             return data

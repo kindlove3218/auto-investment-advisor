@@ -1,0 +1,163 @@
+{
+  "timestamp": "2026-01-28T11:19:12.468055",
+  "cn": [
+    {
+      "code": "600000",
+      "name": "浦发银行",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    },
+    {
+      "code": "600036",
+      "name": "招商银行",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    },
+    {
+      "code": "000001",
+      "name": "平安银行",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    },
+    {
+      "code": "601318",
+      "name": "中国平安",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    },
+    {
+      "code": "601328",
+      "name": "交通银行",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    }
+  ],
+  "hk": [
+    {
+      "code": "00700",
+      "name": "腾讯控股",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    },
+    {
+      "code": "00941",
+      "name": "中国移动",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    },
+    {
+      "code": "01299",
+      "name": "友邦保险",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    }
+  ],
+  "us": [
+    {
+      "code": "AAPL",
+      "name": "Apple Inc.",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    },
+    {
+      "code": "MSFT",
+      "name": "Microsoft Corp.",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    },
+    {
+      "code": "GOOGL",
+      "name": "Alphabet Inc.",
+      "fundamental_score": 0,
+      "technical_score": 0,
+      "total_score": 0,
+      "rating": "不推荐",
+      "action": "建议规避",
+      "target_price": null,
+      "stop_loss": null,
+      "risk_level": "高",
+      "holding_period": "不适用",
+      "reasons": []
+    }
+  ]
+}
