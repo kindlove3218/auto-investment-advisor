@@ -42,16 +42,13 @@ ENV/
 logs/
 
 # Data and Cache
-data/
 cache/
 temp/
 tmp/
 *.csv
 *.xlsx
-*.json
 
 # Reports
-reports/
 *.html
 *.pdf
 
