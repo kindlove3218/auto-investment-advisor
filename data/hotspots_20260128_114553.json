@@ -1,0 +1,118 @@
+{
+  "timestamp": "2026-01-28T11:45:53.119871",
+  "hotspots": [
+    {
+      "sector": "新能源",
+      "score": 60,
+      "match_count": 6,
+      "related_news": [
+        {
+          "title": "新能源政策利好，光伏板块大涨",
+          "url": "https://finance.example.com/news/2",
+          "snippet": "国家出台新能源支持政策，光伏、风电等板块应声大涨。储能、锂电池等产业链全线飘红。"
+        },
+        {
+          "title": "汽车板块活跃，新能源车概念走强",
+          "url": "https://finance.example.com/news/9",
+          "snippet": "汽车板块今日活跃，新能源车概念走强。智能驾驶、激光雷达等细分领域表现突出。"
+        }
+      ]
+    },
+    {
+      "sector": "医药",
+      "score": 50,
+      "match_count": 5,
+      "related_news": [
+        {
+          "title": "医药板块反弹，创新药表现亮眼",
+          "url": "https://finance.example.com/news/4",
+          "snippet": "医药板块今日出现反弹，创新药表现亮眼。医疗器械、疫苗等细分领域均有上涨。"
+        }
+      ]
+    },
+    {
+      "sector": "消费",
+      "score": 50,
+      "match_count": 5,
+      "related_news": [
+        {
+          "title": "消费板块回暖，白酒家电领涨",
+          "url": "https://finance.example.com/news/5",
+          "snippet": "消费板块今日回暖，白酒、家电领涨。免税、零售等细分领域跟随上涨。"
+        }
+      ]
+    },
+    {
+      "sector": "金融",
+      "score": 50,
+      "match_count": 5,
+      "related_news": [
+        {
+          "title": "金融板块稳定，银行保险小幅上涨",
+          "url": "https://finance.example.com/news/8",
+          "snippet": "金融板块今日表现稳定，银行、保险小幅上涨。证券、信托等细分领域持平。"
+        }
+      ]
+    },
+    {
+      "sector": "军工",
+      "score": 40,
+      "match_count": 4,
+      "related_news": [
+        {
+          "title": "军工板块活跃，卫星导航概念走强",
+          "url": "https://finance.example.com/news/6",
+          "snippet": "军工板块今日活跃，卫星导航概念走强。航天、国防等细分领域表现优异。"
+        }
+      ]
+    },
+    {
+      "sector": "通信",
+      "score": 40,
+      "match_count": 4,
+      "related_news": [
+        {
+          "title": "通信板块上涨，5G 概念表现强势",
+          "url": "https://finance.example.com/news/7",
+          "snippet": "通信板块今日上涨，5G 概念表现强势。基站、光通信等细分领域均有涨幅。"
+        }
+      ]
+    },
+    {
+      "sector": "汽车",
+      "score": 40,
+      "match_count": 4,
+      "related_news": [
+        {
+          "title": "汽车板块活跃，新能源车概念走强",
+          "url": "https://finance.example.com/news/9",
+          "snippet": "汽车板块今日活跃，新能源车概念走强。智能驾驶、激光雷达等细分领域表现突出。"
+        }
+      ]
+    },
+    {
+      "sector": "人工智能",
+      "score": 30,
+      "match_count": 3,
+      "related_news": [
+        {
+          "title": "人工智能板块持续走强，多只个股涨停",
+          "url": "https://finance.example.com/news/1",
+          "snippet": "受利好消息影响，人工智能板块今日表现强劲，多只个股涨停。大模型、算力等细分领域表现突出。"
+        }
+      ]
+    },
+    {
+      "sector": "半导体",
+      "score": 20,
+      "match_count": 2,
+      "related_news": [
+        {
+          "title": "半导体板块活跃，国产替代加速",
+          "url": "https://finance.example.com/news/3",
+          "snippet": "半导体板块今日活跃，国产替代加速推进。芯片、设备等细分领域表现优异。"
+        }
+      ]
+    }
+  ]
+}
