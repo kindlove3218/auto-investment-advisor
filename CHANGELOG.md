@@ -1,5 +1,56 @@
 # 更新日志
 
+## [1.1.0] - 2024-01-27
+
+### 新增功能
+
+#### 模块化重构
+- ✅ 将数据获取和股票分析分离为独立模块
+- ✅ `fetch_data.py` - 专门负责市场数据获取
+- ✅ `analyze_stocks.py` - 专门负责股票分析和报告生成
+- ✅ 支持三种运行模式：`fetch`、`analyze`、`full`
+
+#### 数据管理
+- ✅ 新增 `data/` 目录用于存储中间数据
+- ✅ 市场数据保存为 JSON 格式
+- ✅ 推荐数据单独存储，便于追溯
+
+#### GitHub Actions 优化
+- ✅ 将 workflow 分为两个独立的 job
+- ✅ `fetch-data` job - 获取市场数据
+- ✅ `analyze-stocks` job - 分析股票并生成报告
+- ✅ 使用 artifacts 在 job 之间传递数据
+
+#### 文档更新
+- ✅ 新增 `ARCHITECTURE_NEW.md` - 新架构说明文档
+
+### 改进
+
+#### 灵活性提升
+- 可以单独运行数据获取模块
+- 可以使用历史数据重新分析
+- 便于调试和测试
+
+#### 容错性提升
+- 数据获取失败不影响已有数据分析
+- 分析失败不影响数据获取
+- 各模块独立运行，互不影响
+
+### 文件变更
+
+#### 新增文件
+- `fetch_data.py` - 数据获取模块
+- `analyze_stocks.py` - 股票分析模块
+- `data/` - 数据存储目录
+- `ARCHITECTURE_NEW.md` - 新架构文档
+
+#### 修改文件
+- `main.py` - 支持三种运行模式
+- `.github/workflows/daily-report.yml` - 分离为两个 job
+- `.gitignore` - 移除 data/ 和 reports/ 的忽略规则
+- `.env.example` - 新增 RUN_MODE 配置
+- `CHANGELOG.md` - 添加更新日志
+
 ## [1.0.0] - 2024-01-27
 
 ### 新增功能
